@@ -103,7 +103,7 @@
 		</div>	
 	</body>
 	<script>
-		$(window).bind('resize, ready', function(e) {
+		function resize() {
 			if ($(window).width() <= 767) {
 				$('.payment-tabs').removeClass('tabs-left').removeClass('nav-stacked');
 				$('.nav-tabs li').addClass('quarter');
@@ -116,6 +116,12 @@
 				$('.nav-tabs li').removeClass('quarter');
 				$('.tab-content').removeClass('mobile');
 			}
+		}
+		$(window).bind('resize', function(e) {
+			resize();
+		});
+		$(document).ready( function(e) {
+			resize();
 		});
 	</script>
 </html>
