@@ -46,12 +46,14 @@
 			.payment-tabs {
 				padding-top: 10px;
 			} 
+			.quarter {
+				width: 25%;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="main">
-
-			<ul class="nav nav-tabs nav-stacked tabs-left payment-tabs col-sm-3" role="tablist">
+			<ul class="nav nav-tabs nav-stacked tabs-left payment-tabs col-sm-3 col-xs-12" role="tablist">
 				<li class="active first"><a href="#tab1" role="tab" data-toggle="tab">Test1</a></li>
 				<li><a href="#tab2" role="tab" data-toggle="tab">Test2</a></li>
 				<li><a href="#tab3" role="tab" data-toggle="tab">Test3</a></li>
@@ -74,4 +76,18 @@
 			</div>
 		</div>	
 	</body>
+	<script>
+		$(window).bind('resize', function(e) {
+			if ($(window).width() <= 768) {
+				$('.payment-tabs').removeClass('tabs-left');
+				$('.nav-tabs li').addClass('quarter');
+			}
+			else {
+				if( !$('.payment-tabs').hasClass('tabs-left') ) {
+					$('.payment-tabs').addClass('tabs-left');
+				}
+				$('.nav-tabs li').removeClass('quarter');
+			}
+		});
+	</script>
 </html>
