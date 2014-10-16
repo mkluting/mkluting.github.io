@@ -2,11 +2,25 @@
 	<head>
 		<title>Testing</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<style>
+			.nav-tabs.tabs-left > li.active > a {
+				
+			}
+			.nav-tabs.tabs-left > li > a {
+				border-radius: 0;
+				margin-right: 0px;
+				border: 1px solid #ddd;
+			}
+			.payment-tabs {
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="header">TEST</div>
-		<div class="col-md-3 payment-tabs">
-			<ul class="nav nav-stacked nav-tabs" role="tablist">
+		<div class="col-sm-3 payment-tabs">
+			<ul class="nav nav-stacked nav-tabs tabs-left" role="tablist">
 				<li class="active"><a href='#tab1' data-toggle="tab">Test1</a></li>
 				<li><a href="#tab2" data-toggle="tab">Test2</a></li>
 				<li><a href="#tab3" data-toggle="tab">Test3</a></li>
@@ -14,17 +28,17 @@
 			</ul>
 		</div>
 
-		<div class="tab-content">
-			<div id="tab1" class="first tab">
+		<div class="col-sm-9 tab-content">
+			<div id="tab1" class="first tab tab-pane">
 				<span>TAB 1 CONTENT</span>
 			</div>
-			<div id="tab2" class="tab">
+			<div id="tab2" class="tab tab-pane">
 				<span>TAB 2 CONTENT</span>
 			</div>
-			<div id="tab3" class="tab">
+			<div id="tab3" class="tab tab-pane">
 				<span>TAB 3 CONTENT</span>
 			</div>
-			<div id="tab4" class="tab">
+			<div id="tab4" class="tab tab-pane">
 				<span>TAB 4 CONTENT</span>
 
 			</div>
