@@ -5,9 +5,6 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<style>
-			.clearfix {
-				clear: both;
-			}
 			.nav-tabs.tabs-left > li.active > a {
 				border-right-color: transparent;	
 				background-color: white;
@@ -45,6 +42,11 @@
 				border-bottom: 1px solid #ddd;
 				box-shadow: -10px 0px 12px -7px #888888;
 				z-index: 3;
+			}
+			.tab-content.mobile {
+				border-top: 0;
+				border-left: 1px solid #ddd;
+				clear: both;
 			}
 			.payment-tabs {
 				padding-top: 10px;
@@ -84,14 +86,14 @@
 			if ($(window).width() <= 767) {
 				$('.payment-tabs').removeClass('tabs-left').removeClass('nav-stacked');
 				$('.nav-tabs li').addClass('quarter');
-				$('.tab-content').addClass('clearfix');
+				$('.tab-content').addClass('mobile');
 			}
 			else {
 				if( !$('.payment-tabs').hasClass('tabs-left') ) {
 					$('.payment-tabs').addClass('tabs-left').addClass('nav-stacked');
 				}
 				$('.nav-tabs li').removeClass('quarter');
-				$('.tab-content').removeClass('clearfix');
+				$('.tab-content').removeClass('mobile');
 			}
 		});
 	</script>
