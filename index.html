@@ -78,15 +78,17 @@
 	</body>
 	<script>
 		$(window).bind('resize', function(e) {
-			if ($(window).width() <= 768) {
+			if ($(window).width() <= 767) {
 				$('.payment-tabs').removeClass('tabs-left').removeClass('nav-stacked');
 				$('.nav-tabs li').addClass('quarter');
+				$('.tab-content').addClass('clearfix');
 			}
 			else {
 				if( !$('.payment-tabs').hasClass('tabs-left') ) {
-					$('.payment-tabs').addClass('tabs-left').removeClass('nav-stacked');
+					$('.payment-tabs').addClass('tabs-left').addClass('nav-stacked');
 				}
 				$('.nav-tabs li').removeClass('quarter');
+				$('.tab-content').removeClass('clearfix');
 			}
 		});
 	</script>
