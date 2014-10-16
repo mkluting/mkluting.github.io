@@ -79,12 +79,12 @@
 	<script>
 		$(window).bind('resize', function(e) {
 			if ($(window).width() <= 768) {
-				$('.payment-tabs').removeClass('tabs-left');
+				$('.payment-tabs').removeClass('tabs-left').removeClass('nav-stacked');
 				$('.nav-tabs li').addClass('quarter');
 			}
 			else {
 				if( !$('.payment-tabs').hasClass('tabs-left') ) {
-					$('.payment-tabs').addClass('tabs-left');
+					$('.payment-tabs').addClass('tabs-left').removeClass('nav-stacked');
 				}
 				$('.nav-tabs li').removeClass('quarter');
 			}
