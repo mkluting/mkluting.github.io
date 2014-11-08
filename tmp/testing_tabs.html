@@ -1,0 +1,129 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Testing</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<style>
+			.nav-tabs.tabs-left > li.active > a {
+				border-right-color: transparent;	
+				background-color: white;
+				box-shadow: -2px -2px 2px #888888, -2px 2px 2px #888888;
+				z-index: 5;
+				border-bottom-color: transparent;
+			}
+			.nav-tabs.tabs-left > li.active.first > a {
+				box-shadow: -2px 2px 2px #888888;
+				border-top-color: #ddd;
+			}
+			.nav-tabs.tabs-left > li.active.last > a {
+				box-shadow: -2px -2px 2px #888888;
+			} 
+			.nav-tabs.tabs-left > li {
+				margin-top: 0px;
+				margin-bottom: 0px;
+			}
+			.nav-tabs.tabs-left > li > a {
+				border-radius: 0;
+				margin-right: 0px;
+				border: 1px solid grey;
+				background-color: gainsboro;
+				border-top-color: white;
+			}
+			.nav-tabs > li.active.first > a {
+				box-shadow: 6px -1px 4px -3px #888888;
+				border-left-color: #ddd;
+			}
+			.nav-tabs > li.active.last > a {
+				box-shadow: -6px -1px 4px -3px #888888;
+			}
+			.nav-tabs > li > a {
+				background-color: gainsboro;
+				border-radius: 0;
+				margin-right: 0;
+				border: 1px solid grey;
+				border-right-color: white;
+			}
+			.nav-tabs > li.active > a {
+				box-shadow: -6px -1px 4px -3px #888888, 6px -1px 4px -3px #888888;
+				z-index: 5;
+				background-color: white;
+				border-bottom-color: transparent;
+			}
+			.payment-tabs {
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+			.tab-content {
+				margin-top: 10px;
+				height: 169px;
+				border-right: 1px solid #ddd;
+				border-top: 1px solid #ddd;
+				border-bottom: 1px solid #ddd;
+				box-shadow: -10px 0px 12px -7px #888888;
+				z-index: 3;
+				padding: 50px;
+			}
+			.tab-content.mobile {
+				border-top: 0;
+				border-left: 1px solid #ddd;
+				clear: both;
+				box-shadow: -2px -6px 12px -3px #888888;
+			}
+			.payment-tabs {
+				padding-top: 10px;
+			} 
+			.quarter {
+				width: 25%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<ul class="nav nav-tabs nav-stacked tabs-left payment-tabs col-sm-3 col-xs-12" role="tablist">
+				<li class="active first"><a href="#tab1" role="tab" data-toggle="tab">Test1</a></li>
+				<li><a href="#tab2" role="tab" data-toggle="tab">Test2</a></li>
+				<li><a href="#tab3" role="tab" data-toggle="tab">Test3</a></li>
+				<li class="last"><a href="#tab4" role="tab" data-toggle="tab">Test4</a></li>
+			</ul>
+
+			<div class="col-sm-9 tab-content">
+				<div id="tab1" class="active first tab tab-pane">
+					<span>TAB 1 CONTENT</span>
+				</div>
+				<div id="tab2" class="tab tab-pane">
+					<span>TAB 2 CONTENT</span>
+				</div>
+				<div id="tab3" class="tab tab-pane">
+					<span>TAB 3 CONTENT</span>
+				</div>
+				<div id="tab4" class="tab tab-pane">
+					<span>TAB 4 CONTENT</span>
+				</div>
+			</div>
+		</div>	
+	</body>
+	<script>
+		function resize() {
+			if ($(window).width() <= 767) {
+				$('.payment-tabs').removeClass('tabs-left').removeClass('nav-stacked');
+				$('.nav-tabs li').addClass('quarter');
+				$('.tab-content').addClass('mobile');
+			}
+			else {
+				if( !$('.payment-tabs').hasClass('tabs-left') ) {
+					$('.payment-tabs').addClass('tabs-left').addClass('nav-stacked');
+				}
+				$('.nav-tabs li').removeClass('quarter');
+				$('.tab-content').removeClass('mobile');
+			}
+		}
+		$(window).bind('resize', function(e) {
+			resize();
+		});
+		$(document).ready( function(e) {
+			resize();
+		});
+	</script>
+</html>
