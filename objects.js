@@ -22,7 +22,7 @@ game.addEventListener("load", function(){
   // A moveable pot
   pot = new Sprite(16, 16)
   pot.image = game.assets['images/map.png']
-  pot.frame = 26
+  pot.frame = 28
   pot.x = 16 * 10
   pot.y = 16 * 10
   pot.tl.setFrameBased()
