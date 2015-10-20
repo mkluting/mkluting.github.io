@@ -1,21 +1,73 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Sounds and Music Example</title>
-  <link rel="stylesheet" type="text/css" href="lib/styles.css">
-</head>
-<body>
-
-  <h1>Sounds and Music Example</h1>
-
-  <script src="lib/enchant.js" type="text/javascript" charset="utf-8"></script>
-  <script src="lib/game.js" type="text/javascript" charset="utf-8"></script>
-  <script src="character.js" type="text/javascript" charset="utf-8"></script>
-  <script src="objects.js" type="text/javascript" charset="utf-8"></script>
-  <script src="map.js" type="text/javascript" charset="utf-8"></script>
-
-  <script>
-    game.start()
-  </script>
-</body>
+    <head>
+        <title>Matt Kluting</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/> 
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="js/modules/main.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand">Matt Kluting</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a data-section="home" href="#">Home</a></li>
+                    <li>
+                        <a data-section="about-me" href="#">About Me</a>
+                    </li>
+                    <li>
+                        <a data-section="resume" href="#">Resum&eacute;</a>
+                    </li>
+                    <li>
+                        <a href="http://www.github.com/mkluting">Github</a>
+                    </li>
+                    <li>
+                        <a data-section="blog" href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="body">
+            <div class="home active">
+                <div class="header">
+                    Home
+                </div>
+                <div class="jumbotron">
+                    <h1>Welcome!</h1>
+                      <p>This is the homepage for Matt Kluting</p>
+                      <p><a data-section="about-me" class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                </div>
+            </div>
+            <div class="resume">
+                <div class="header">
+                    Resum&eacute;
+                </div>
+                <div class="jumbotron">
+                    <h1>Coming Soon!</h1>
+                </div>
+            </div>
+            <div class="about-me">
+                <div class="header">
+                    About Me
+                </div>
+                <div class="jumbotron">
+                    <h1>Coming Soon!</h1>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="header">
+                    Blog 
+                </div>
+                <div class="jumbotron">
+                    <h1>Coming Soon!</h1>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

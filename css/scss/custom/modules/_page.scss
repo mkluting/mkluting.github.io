@@ -1,0 +1,14 @@
+.body {
+    > div {
+        display: none;
+        @extend .col-md-12;
+    }
+    .active {
+        display: block;
+    }
+    .jumbotron {
+        clear: both;
+        border-radius: 5px;
+        padding-left: 30px;
+    }
+}

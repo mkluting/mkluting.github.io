@@ -1,0 +1,22 @@
+nav {
+    height: 45px;
+    margin: 0 auto;
+    clear: both;
+    color: white;
+
+    &.navbar-custom {
+        color: #FFFFFF;
+        background-color: rgb(36, 36, 56);
+    }
+
+    .navbar-header {
+        width: 150px;
+        text-align: center;
+    }
+
+    .navbar-brand {
+        float: none;
+        display: block;
+    }
+
+}
