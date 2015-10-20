@@ -1,0 +1,112 @@
+/* Mags Theme Styles */
+
+
+/* Colors */
+$text-color-1: #333333;
+$text-color-2: #808080;
+$header-text-color: #0481C0;
+$border-color: #D1D1D1;
+$border-color-2: #015CA5;
+$border-color-3: #5393D0;
+$search-border-color: #B4D6F2;
+$background-color-1: #F2F2F2;
+$background-color-2: #D1EAFF;
+$background-color-3: #30ADE7;
+$link-color: #3BC1FE;
+$alert-color: #E52B2C;
+$alert-color-2: #A94442;
+$nav-item-color: #025D99;
+$nav-item-hover-color: #27A9EA;
+$rating-star-color: #D6B638;
+$discount-color: #92C813;
+$red: #EA2C30;
+$finished-step-grey: #999999;
+$grey: #CACACA;
+$light-grey: #FBFBFB;
+$shadow-color: #CCCCCC;
+$paypal-yellow: #FFFFDA;
+$alert-red: #A94442;
+$error-red-2: #EB2930;
+$success-green: #9CD219;
+$info-alert-font: #2762A4;
+$info-alert-background: #D1EAFF;
+$info-alert-border: #C9E0F6;
+$smt-shadow-blue: #2762A4;
+$smt-dark-title: #004079;
+$smt-nav-active: #E62E30;
+$smt-primary-border: #E3EEF0;
+$smt-secondary-border: #E2E2E2;
+$smt-secondary-shadow: #9a9a9a;
+$smt-btn-text-shadow: #0893a4;
+$smt-card-blue:#61a1d2;
+$smt-card-stripe-teal:#30d0e8;
+$smt-blue-text: #95C2DB;
+$smt-blue-btn-border: #0BA5B7;
+$smt-green-btn-border: #B0D84E;
+$border-grey: #D9D9D9;
+$medium-grey: #7C7C7C;
+$smt-title-blue: #0379bf;
+$smt-primary-blue: #4eafec;
+$panel-grey: #F2F2F2;
+$smt-icon-blue: #005bab;
+$lighter-text: #666666;
+$green: #99D113;
+$grey-blue: #F4F9FD;
+$lightest-grey: #FAFAFA;
+$smt-teal: #1CCEE4;
+$light-blue: #3ec2fd;
+$darker-blue: #0B6CC3;
+$lighter-blue: #3dc0fe;
+$dark-blue:#024987;
+
+/* spinner colors */
+$spinner-blue: #144E8D;
+
+//== Typography
+//
+//##
+
+$font-family-sans-serif: Arial,Helvetica,Verdana,sans-serif;
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Large screen / wide desktop
+// Note: Deprecated $screen-lg and $screen-lg-desktop as of v3.0.1
+$screen-lg: 992px;
+
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width: 15px;
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Large screen / wide desktop
+$container-large-desktop: ((940px + $grid-gutter-width));
+
+
+//== Navs
+//
+//##
+
+$nav-link-hover-bg: #FFFFFF;
+
+//== Custom Classes
+//
+//##
+.header-text-color {
+    color: $header-text-color;
+}
+
+.normal-font {
+    font-weight: normal;
+}
