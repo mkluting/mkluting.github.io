@@ -8,7 +8,7 @@ $('document').ready(function() {
         $('.'+section).addClass('active');
     });
 
-    $('.jumbotron a').on('click', function() {
+    $('.jumbotron bta').on('click', function() {
         $('.navbar-nav li.active').removeClass('active');
         $('.navbar-nav li a[data-section="about-me"]').parents('li').addClass('active');
 
